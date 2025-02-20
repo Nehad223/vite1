@@ -6,12 +6,16 @@ const TelegramAuth = () => {
   useEffect(() => {
     if (window.Telegram && window.Telegram.WebApp) {
       const tg = window.Telegram.WebApp;
+      console.log("Telegram WebApp: ", tg);  // عرض كامل الـ WebApp للتأكد
       if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
-        console.log(tg.initDataUnsafe.user);  // لعرض بيانات المستخدم في الكونسول
+        console.log("User data: ", tg.initDataUnsafe.user);  // بيانات المستخدم
         setUser(tg.initDataUnsafe.user);
+      } else {
+        console.log("User data is not available.");
       }
     }
   }, []);
+  
  
 
   return (
