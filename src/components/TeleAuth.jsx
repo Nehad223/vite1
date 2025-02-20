@@ -4,14 +4,15 @@ const TelegramAuth = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-   
     if (window.Telegram && window.Telegram.WebApp) {
       const tg = window.Telegram.WebApp;
       if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
+        console.log(tg.initDataUnsafe.user);  // لعرض بيانات المستخدم في الكونسول
         setUser(tg.initDataUnsafe.user);
       }
     }
   }, []);
+ 
 
   return (
     <div>
