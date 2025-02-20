@@ -2,3 +2,13 @@ h1,h2,p{
   color: white;
   font-size: 40px !important;
 }
+div{
+  width: 98%;
+  height: 98%;
+}
+body{
+  color:black;
+}
+h1{
+  text-align: center;
+}
