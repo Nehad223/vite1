@@ -6,3 +6,4 @@ export default defineConfig({
   base: '/vite1/', // ضع اسم المستودع الخاص بك هنا
   plugins: [react()],
 });
+
