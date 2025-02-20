@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Error_auth from "./Error_auth";
+import Error_auth from "./components/Error_auth";
 
 const TelegramAuth = () => {
   const [user, setUser] = useState(null);
